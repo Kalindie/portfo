@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento Grid Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hover-effect {
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="flex h-screen w-full flex-col items-center justify-center rounded-lg p-5 sm:p-40 dark:bg-slate-900">
+    
+    <!-- Scrollable Container for Small Screens -->
+    <div class="w-full h-screen overflow-y-auto sm:overflow-visible">
+        
+        <div class="grid h-full w-full grid-cols-1 sm:grid-cols-12 grid-rows-6 gap-4">
+            
+            <!-- Profile Section -->
+            <div class="col-span-6 row-span-3 sm:row-span-1 rounded-3xl bg-amber-500 hover:scale-105 transition-transform duration-300 shadow-lg flex justify-center items-center p-10 text-orange-950 hover-effect">
+                <p> 
+                    <b>I'm</b><br>
+                    <b>3D/ 2D motion designer | Motion Graphic Artist | 3D character designer</b><br>
+                    Crafting Engaging Animations, One Frame at a Time! Currently working on my indie game.
+                </p>
+            </div>
+            
+            <!-- Contact -->
+            <div class="col-span-3 sm:col-span-3 row-span-1 rounded-3xl bg-lime-800 hover:scale-105 transition-transform shadow-lg flex justify-center items-center text-amber-500 hover-effect">
+                <b>+918147163191</b>
+            </div>
+
+            <!-- Resume -->
+            <a href="md-dhiraj-2025.pdf" target="_blank" class="col-span-2 sm:col-span-3 row-span-1 rounded-3xl bg-amber-500 hover:scale-105 transition-transform duration-300 shadow-lg flex justify-center items-center text-orange-950 font-bold hover-effect">
+                Resume 📄
+            </a>        
+
+            <!-- Showreel -->
+            <div class="col-span-6 row-span-3 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                Showreel
+            </div>
+
+            <!-- About Section -->
+            <div class="col-span-6 row-span-2 rounded-3xl bg-lime-800 hover:scale-105 transition-transform shadow-lg flex justify-center items-center text-amber-500 p-10 hover-effect">
+                <p><b>I'm a CS Engineer turned Motion Graphic Designer, bringing ideas to life with animation and creativity!</b><br><br>
+                    With a strong technical background and a passion for visual storytelling, I craft engaging motion graphics that captivate audiences and elevate brands. <br><br>
+                    <b>PREVIOUSLY</b><br><br>
+                    Motion Designer at <b>GameApp</b>
+                </p>
+            </div>
+
+            <!-- Commission Work -->
+            <div class="col-span-2 row-span-1 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                Commission Work
+            </div>
+
+            <!-- Instagram Links (Flexible Layout) -->
+            <div class="col-span-1 row-span-1 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">instagram</div>
+            <div class="col-span-1 row-span-1 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">instagram</div>
+            <div class="col-span-1 row-span-1 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">instagram</div>
+            <div class="col-span-1 row-span-1 rounded-3xl bg-orange-400 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">instagram</div>
+
+            <!-- Course Sections -->
+            <div class="col-span-3 row-span-2 rounded-3xl bg-amber-500 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                3d charater animation
+            </div>
+            <div class="col-span-3 row-span-2 rounded-3xl bg-lime-800 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                Ux-ui motion
+            </div>
+            <div class="col-span-3 row-span-2 rounded-3xl bg-amber-500 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                motion design
+            </div>
+            <div class="col-span-3 row-span-2 rounded-3xl bg-lime-800 hover:scale-105 transition-transform shadow-lg flex justify-center items-center hover-effect">
+                game design
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
